@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="{dede:global.cfg_soft_lang/}">
+		<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />	
+	</head>
+	<body>
+<h3 class="am-article-title blog-title">
+	{dede:field.title/}<br />
+<span style="color:#CCCCCC;font-size:12px;font-weight:normal;line-height:1.5;">时间:{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</span>
+</h3>
+<div class="am-g blog-content" style="padding:10px;">
+	<!--陈伟-->
+	<div id="a1"></div>
+<script type="text/javascript" src="/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+	var flashvars={
+		f:'{dede:field.ckplayer/}',
+		c:0,
+		b:1,
+		i:'{dede;field.cwpic/}'
+		};
+	var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
+	CKobject.embedSWF('/ckplayer/ckplayer.swf','a1','ckplayer_a1','600','400',flashvars,params);
+	/*
+	CKobject.embedSWF(播放器路径,容器id,播放器id/name,播放器宽,播放器高,flashvars的值,其它定义也可省略);
+	下面三行是调用html5播放器用到的
+	*/
+	var video=['{dede:field.ckplayer/}->video/mp4'];
+	var support=['iPad','iPhone','ios','android+false','msie10+false'];
+	CKobject.embedHTML5('a1','ckplayer_a1','100%','280',video,flashvars,support);	
+	function closelights(){//关灯
+		alert(' 本演示不支持开关灯');
+	}
+	function openlights(){//开灯
+		alert(' 本演示不支持开关灯');
+	}
+  </script>   
+<!--陈伟--><br />
+{dede:field.body/}
+</div>
+      <br/>
+<div style="text-align:center;">
+  <hr/>
+	<span style="line-height:1.5;">{dede:include filename="footer_m.htm"/}</span>
+</div>    
+
+  </body>
+
+</html>

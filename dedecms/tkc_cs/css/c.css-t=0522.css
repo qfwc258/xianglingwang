@@ -1,0 +1,52 @@
+#c {
+    background: url("../img/c4.jpg")/*tpa=http://aosmith.accdo.com/tkc_cs/img/c4.jpg*/ no-repeat center top;
+    background-size: 10rem auto;
+
+}
+
+#c1 {
+    width: 7rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.8rem;
+}
+
+#c3 {
+    position: absolute;
+    bottom: 0.6rem
+}
+
+#c4 {
+    width: 7rem;
+    position: absolute;
+    left: 1.6rem;
+    top: 2.4rem;
+}
+
+#c5 {
+    width: 7rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 2.5rem;
+}
+
+.lyric {
+    width: 13rem;
+    height: 4rem;
+    overflow: auto;
+    list-style: none;
+}
+
+.lyric .current {
+    font-weight: bold;
+}
+
+#box {
+    display: none;
+    position: absolute;
+    top: 12rem;
+    left: -1.5rem;
+}
+#box>ul>li{
+    margin:0.7rem 0;
+}

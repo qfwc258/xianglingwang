@@ -1,0 +1,492 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="zh-CN" class="ie6 ielt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="zh-CN" class="ie7 ielt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="zh-CN" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="zh-CN"><!--<![endif]-->
+<head>
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/index.php">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/m/index.php";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<script>
+var url = location.search;
+url = url.substr(1);
+var bs={
+        versions:function(){
+           var u = navigator.userAgent, app = navigator.appVersion;
+           return {//移动终端浏览器版本信息
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1 //是否iPad                
+            };
+         }(),
+         language:(navigator.browserLanguage || navigator.language).toLowerCase()
+    } 
+    if(bs.versions.mobile && url!='mobile'){
+        if(bs.versions.android||bs.versions.iPhone||bs.versions.iPad||bs.versions.ios){
+            window.location.href="/wap/wap.php";
+        }
+    }
+</script>
+	<meta charset="gb2312">
+    <title>湘灵科技 by www.moke8.com</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="order by moke8.com" />
+	<link rel="shortcut icon" href="/favicon.ico" />	
+	<base target="_blank">
+	<!-- <link rel="stylesheet" type="text/css" href="/moke8/css/cmstop-common.css" />-->
+	<!-- <link rel="stylesheet" type="text/css" href="/moke8/css/cmstop-index.css" /> -->
+	<!--[if lt IE 9 ]>
+		<script type="text/javascript" src="/moke8/js/helper/modernizr.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="/moke8/js/cmstop-common.js"></script>
+	<script type="text/javascript" src="/moke8/js/jquery.js"></script>
+	<script type="text/javascript" src="/moke8/js/config.js"></script>
+	<script type="text/javascript" src="/moke8/js/jquery.cookie.js"></script>
+	<!-- 本页面私有 -->
+    	<link rel="stylesheet" type="text/css" href="/moke8/html/css/style.css" />
+    	<script type="text/javascript" src="/moke8/html/js/common.js"></script>
+	<script type="text/javascript" src="/moke8/html/js/index.js"></script>
+	<!-- @本页面私有 -->
+</head>
+
+
+<body>
+	<!--网站公共头部-->
+	<div class="topbar">
+	 <div class=" wrapper">
+		<div class="logo"><a href="/" title="湘灵科技" >湘灵科技</a></div>
+		<ul class="nav">
+			<li><strong><a href="/" title="" target="_self"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;首页</a></strong></li>
+            
+	<li><strong><a href="/a/redian/" title="" target="_self"><span class="glyphicon 
+glyphicon-book"></span>&nbsp;&nbsp;热点</a></strong>
+                        <dl>
+					<em></em>
+                    
+				</dl></li><li><strong><a href="/a/keji/" title="" target="_self"><span class="glyphicon 
+glyphicon-book"></span>&nbsp;&nbsp;科技</a></strong>
+                        <dl>
+					<em></em>
+                    
+				</dl></li><li><strong><a href="/a/yingshiyule/" title="" target="_self"><span class="glyphicon 
+glyphicon-book"></span>&nbsp;&nbsp;影视娱乐</a></strong>
+                        <dl>
+					<em></em>
+                    
+				</dl></li><li><strong><a href="/a/shizheng/" title="" target="_self"><span class="glyphicon 
+glyphicon-book"></span>&nbsp;&nbsp;财经</a></strong>
+                        <dl>
+					<em></em>
+                    
+				</dl></li><li><strong><a href="/a/wenxue/" title="" target="_self"><span class="glyphicon 
+glyphicon-book"></span>&nbsp;&nbsp;文化</a></strong>
+                        <dl>
+					<em></em>
+                    
+				</dl></li>          
+     
+		</ul>
+		<div class="action"> 
+			<a href="" class="n1" target="_blank" title="投稿">投稿</a>			
+		</div>
+	</div>
+</div>
+
+	<!--@网站公共头部-->
+<div class="main"> 
+  <!--主要内容-->
+  <div class="mainnews"> 
+    <!--顶部文字新闻-->
+	<div class="latestnews">
+		<ul id="miniNewsRegion">
+        
+    <li><img src="/moke8/html/images/symbol-1.png" alt="胡润: 全球房价涨幅TOP10, 中国六大城市上榜" /><a href="/a/shizheng/20170905/875.html">胡润: 全球房价涨幅TOP10, 中国六大城市上榜</a>
+<img src="/moke8/html/images/symbol-1.png" alt="印度下狠手，李嘉诚公司被追缴上千亿，这到底是为什么？丨艾问" /><a href="/a/shizheng/20170830/732.html">印度下狠手，李嘉诚公司被追缴上千亿，这到底是为什</a></li>
+<li><img src="/moke8/html/images/symbol-1.png" alt="对话吕克贝松：致敬共产主义，《星际特工》不曾献媚好莱坞" /><a href="/plus/view.php?aid=701">对话吕克贝松：致敬共产主义，《星际特工》不曾献媚</a>
+<img src="/moke8/html/images/symbol-1.png" alt="麦当劳停用抗生素鸡为啥未包含中国?" /><a href="/a/shizheng/20170828/198.html">麦当劳停用抗生素鸡为啥未包含中国?</a></li>
+<li><img src="/moke8/html/images/symbol-1.png" alt="七夕一问：谁是唐代诗人里的好男人? | 六神磊磊" /><a href="/a/redian/20170828/75.html">七夕一问：谁是唐代诗人里的好男人? | 六神磊磊</a>
+<img src="/moke8/html/images/symbol-1.png" alt="消失的美女总理英拉" /><a href="/a/redian/20170828/82.html">消失的美女总理英拉</a></li>
+<li><img src="/moke8/html/images/symbol-1.png" alt="老照片：百年前农村，到处是低矮茅屋，适合当时日本人的身高" /><a href="/a/redian/20170828/88.html">老照片：百年前农村，到处是低矮茅屋，适合当时日本</a>
+<img src="/moke8/html/images/symbol-1.png" alt="张勇与阿里新零售 | 封面故事" /><a href="/a/redian/20170828/80.html">张勇与阿里新零售 | 封面故事</a></li>
+
+			
+		</ul>
+		<div class="msearch">
+        <form  name="formsearch" action="/plus/search.php">
+        <input type="hidden" name="kwtype" value="0" />
+			 <input type="text" name="q" placeholder="输入关键词" class="text-msearch"  id="baiduSearch"/>
+<input type="submit" class="btn-msearch" value="" />
+</form>
+		</div>
+	 </div>
+
+    <!--左侧-->
+    <div class="newsl">
+	    	<!-- 首页幻灯片 -->
+		<div class="m-slide">
+				 <ul class="img">
+                <li><a href="/a/shizheng/20170905/870.html" target="_blank" title="当年跟随贾跃亭加入乐视的前央视名嘴，现在过得如何？丨艾问"><img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/e69a5d5cd2ebd7c30dfa3d8ff38a6520.jpeg" width="670" height="365"/></a></li>
+<li><a href="/a/shizheng/20170905/875.html" target="_blank" title="胡润: 全球房价涨幅TOP10, 中国六大城市上榜"><img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/d627e7b4247c60ab9ba70e3611f2b697.jpeg" width="670" height="365"/></a></li>
+<li><a href="/a/yingshiyule/20170905/832.html" target="_blank" title="李连杰首次参加真人秀综艺节目，澄清瘫痪传闻"><img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/5c1e0cc14cd4b9779226c61faa181a79.jpeg" width="670" height="365"/></a></li>
+<li><a href="/a/keji/20170905/783.html" target="_blank" title="未来智能家居 智能音箱发挥用武之地"><img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/ab66fdeda4420c64bbf012fed4cf5635.jpeg" width="670" height="365"/></a></li>
+
+		 </ul>
+<div id="ifocus_opdiv"></div>
+<div id="ifocus_tx">
+	        <ul>
+   			    <li><a href="/a/shizheng/20170905/870.html" target="_blank" title="当年跟随贾跃亭加入乐视的前央视名嘴，现在过得如何？丨艾问">当年跟随贾跃亭加入乐视的前央视名</a></li>
+<li><a href="/a/shizheng/20170905/875.html" target="_blank" title="胡润: 全球房价涨幅TOP10, 中国六大城市上榜">胡润: 全球房价涨幅TOP10, 中国六</a></li>
+<li><a href="/a/yingshiyule/20170905/832.html" target="_blank" title="李连杰首次参加真人秀综艺节目，澄清瘫痪传闻">李连杰首次参加真人秀综艺节目，澄</a></li>
+<li><a href="/a/keji/20170905/783.html" target="_blank" title="未来智能家居 智能音箱发挥用武之地">未来智能家居 智能音箱发挥用武之</a></li>
+
+				
+			</ul>
+</div>
+   <ul class="tab">
+                <li><div class="color1">当年跟随贾跃亭加入乐视的前央视名</div></li>
+<li><div class="color2">胡润: 全球房价涨幅TOP10, 中国六</div></li>
+<li><div class="color3">李连杰首次参加真人秀综艺节目，澄</div></li>
+<li><div class="color4">未来智能家居 智能音箱发挥用武之</div></li>
+
+	</ul>
+			</div>
+		<!-- @首页幻灯片 -->
+
+		<!--精选导读-->
+		<div class="chosen" style="margin-top:80px;">
+			<div class="com-title"><span><img src="/moke8/html/images/symbol-4.png" alt="" />精选导读</span></div>
+                <div class="chosenbox ">
+			<div class="chosenimg"><a href="//a/yingshiyule/20170905/832.html" title="李连杰首次参加真人秀综艺节目，澄清瘫痪传闻" target="_blank"><img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/5c1e0cc14cd4b9779226c61faa181a79.jpeg" alt="李连杰首次参加真人秀综艺节目，澄清瘫痪传闻" width="130" height="85" /></a></div>
+			<h3><a href="/a/yingshiyule/20170905/832.html" title="李连杰首次参加真人秀综艺节目，澄清瘫痪传闻" target="_blank">李连杰首次参加真人秀综艺节目，澄清瘫痪传闻</a></h3>
+			<p>已经好久都没有在娱乐圈听到关于功夫巨星李连杰的消息了，因为他已经很长时...</p>
+			<p><span></span></p>
+		</div>
+<div class="chosenbox chosenbox-ml">
+			<div class="chosenimg"><a href="//a/keji/20170905/783.html" title="未来智能家居 智能音箱发挥用武之地" target="_blank"><img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/ab66fdeda4420c64bbf012fed4cf5635.jpeg" alt="未来智能家居 智能音箱发挥用武之地" width="130" height="85" /></a></div>
+			<h3><a href="/a/keji/20170905/783.html" title="未来智能家居 智能音箱发挥用武之地" target="_blank">未来智能家居 智能音箱发挥用武之地</a></h3>
+			<p>【家电网 HEA.CN 2017年9月5日原创】目前而言，智能设备已不再是一个陌生的...</p>
+			<p><span></span></p>
+		</div>
+<div class="chosenbox ">
+			<div class="chosenimg"><a href="//a/yingshiyule/20170830/658.html" title="《破局》：郭富城有多“怂”，王千源就有多“疯”" target="_blank"><img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/bb2eba7792da31f049e9ce001e424136.jpeg" alt="《破局》：郭富城有多“怂”，王千源就有多“疯”" width="130" height="85" /></a></div>
+			<h3><a href="/a/yingshiyule/20170830/658.html" title="《破局》：郭富城有多“怂”，王千源就有多“疯”" target="_blank">《破局》：郭富城有多“怂”，王千源就有多“疯”</a></h3>
+			<p>摘要：文/杀手里昂记得是初中的时候，看过一部香港恐怖片叫《月夜闪灵》，...</p>
+			<p><span></span></p>
+		</div>
+<div class="chosenbox chosenbox-ml">
+			<div class="chosenimg"><a href="//a/shizheng/20170830/746.html" title="中国工商总局据称正评估对苹果涉嫌垄断的举报" target="_blank"><img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/4c0eb0f1276f32d519fda2de6b0c5346.jpeg" alt="中国工商总局据称正评估对苹果涉嫌垄断的举报" width="130" height="85" /></a></div>
+			<h3><a href="/a/shizheng/20170830/746.html" title="中国工商总局据称正评估对苹果涉嫌垄断的举报" target="_blank">中国工商总局据称正评估对苹果涉嫌垄断的举报</a></h3>
+			<p>摘要：PingWest品玩8月30日报道，据彭博社援引知情人士消息称，中国工商总...</p>
+			<p><span></span></p>
+		</div>
+<div class="chosenbox ">
+			<div class="chosenimg"><a href="//a/shizheng/20170830/732.html" title="印度下狠手，李嘉诚公司被追缴上千亿，这到底是为什么？丨艾问" target="_blank"><img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/175e3b8e4532195fb0094cb5ba528869.jpeg" alt="印度下狠手，李嘉诚公司被追缴上千亿，这到底是为什么？丨艾问" width="130" height="85" /></a></div>
+			<h3><a href="/a/shizheng/20170830/732.html" title="印度下狠手，李嘉诚公司被追缴上千亿，这到底是为什么？丨艾问" target="_blank">印度下狠手，李嘉诚公司被追缴上千亿，这到底是为什么？丨艾问</a></h3>
+			<p>李嘉诚：“我在30岁前，资产就已足够一家人一世人不需要再工作，但我停不下...</p>
+			<p><span></span></p>
+		</div>
+<div class="chosenbox chosenbox-ml">
+			<div class="chosenimg"><a href="//plus/view.php?aid=701" title="对话吕克贝松：致敬共产主义，《星际特工》不曾献媚好莱坞" target="_blank"><img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/11ed3188469f3c6425e75d680e5a56c4.jpeg" alt="对话吕克贝松：致敬共产主义，《星际特工》不曾献媚好莱坞" width="130" height="85" /></a></div>
+			<h3><a href="/plus/view.php?aid=701" title="对话吕克贝松：致敬共产主义，《星际特工》不曾献媚好莱坞" target="_blank">对话吕克贝松：致敬共产主义，《星际特工》不曾献媚好莱坞</a></h3>
+			<p>作者/蔡姗妮 编辑/曹乐溪 采访吕克·贝松之前，会有在所难免的紧张。 吕克...</p>
+			<p><span></span></p>
+		</div>
+
+	    
+		  	<div class="floatfix"></div>
+		</div>
+		<!--@精选导读-->
+		<!--热门推荐-->
+		<div class="hot">
+			<div class="com-title"><span><img src="/moke8/html/images/symbol-6.png" alt="" />热门推荐</span></div>
+                <div class="hotbox">
+	<div class="hotimg">
+		<div class="hotimgzz"></div>
+		<img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/5c1e0cc14cd4b9779226c61faa181a79.jpeg" alt="李连杰首次参加真人秀综艺节目，澄清瘫痪传闻" width="250" height="165"/>
+		<div class="standpoint">影视娱乐</div>
+		<a class="zzsz" href="/a/yingshiyule/20170905/832.html"  target="_blank" title="李连杰首次参加真人秀综艺节目，澄清瘫痪传闻"></a>
+	</div>
+	<h3><a href="/a/yingshiyule/20170905/832.html">李连杰首次参加真人秀综艺节目，澄</a></h3>
+	<p>已经好久都没有在娱乐圈听到关于功夫巨星李连杰的消息了，因为他已经很长时间没有拍过新戏，目前也没过什么要拍戏的消息！曾经的功夫巨星，如今好似已经消失在人们的视线中，也不在狗仔跟拍的名单中！没有李连杰的消息时，不负责任的媒体传来的竟然...</p>
+	<span>阅读：71</span><span>2017-09-05 11:46</span> 
+  </div>
+<div class="hotbox">
+	<div class="hotimg">
+		<div class="hotimgzz"></div>
+		<img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/ab66fdeda4420c64bbf012fed4cf5635.jpeg" alt="未来智能家居 智能音箱发挥用武之地" width="250" height="165"/>
+		<div class="standpoint">科技</div>
+		<a class="zzsz" href="/a/keji/20170905/783.html"  target="_blank" title="未来智能家居 智能音箱发挥用武之地"></a>
+	</div>
+	<h3><a href="/a/keji/20170905/783.html">未来智能家居 智能音箱发挥用武之</a></h3>
+	<p>【家电网 HEA.CN 2017年9月5日原创】目前而言，智能设备已不再是一个陌生的概念。智能化的时代之下各种智能家居也逐渐渗透到人们的日常生活当中去，智能音箱作为当下科技行业热点领域，其可谓是智能家居领域的先行军。 作为智能家居的核心技术，计...</p>
+	<span>阅读：139</span><span>2017-09-05 11:44</span> 
+  </div>
+<div class="hotbox">
+	<div class="hotimg">
+		<div class="hotimgzz"></div>
+		<img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/c747b9f0ca94d2e7be4431eb282b3ff0.jpeg" alt="开学季，张柏芝送两儿子入学，母爱力爆棚，暖妈力Max" width="250" height="165"/>
+		<div class="standpoint">影视娱乐</div>
+		<a class="zzsz" href="/a/yingshiyule/20170905/835.html"  target="_blank" title="开学季，张柏芝送两儿子入学，母爱力爆棚，暖妈力Max"></a>
+	</div>
+	<h3><a href="/a/yingshiyule/20170905/835.html">开学季，张柏芝送两儿子入学，母爱</a></h3>
+	<p>又是一年两度的开学季，明星妈妈、爸爸也和普通父母一样，开始忙碌了起来。一个人带着两个儿子的张柏芝亦如此。和往年一样，今年开学季，张柏芝又亲自送儿子上学了。 不难看出，张柏芝起的很早很早。貌似还来不及洗漱，穿着拖鞋，披着头发就出来了...</p>
+	<span>阅读：72</span><span>2017-09-05 11:19</span> 
+  </div>
+<div class="hotbox">
+	<div class="hotimg">
+		<div class="hotimgzz"></div>
+		<img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/07399b6d1a1b1694bd8281089c405ffa.jpeg" alt="「敦刻尔克」要拿奥斯卡？得先问他答不答应" width="250" height="165"/>
+		<div class="standpoint">影视娱乐</div>
+		<a class="zzsz" href="/a/yingshiyule/20170905/836.html"  target="_blank" title="「敦刻尔克」要拿奥斯卡？得先问他答不答应"></a>
+	</div>
+	<h3><a href="/a/yingshiyule/20170905/836.html">「敦刻尔克」要拿奥斯卡？得先问他</a></h3>
+	<p>号称年度神片的[敦刻尔克] 首映日创下诺兰作品最佳开画 来自Mtime pro9月1日票房 昨天姜君给大家带来非常中肯的评价 请戳我来说点不一样的敦刻尔克 不同于以往的诺兰电影 [敦刻尔克]关注观众的体验和士兵的生命 被倾注了更多艺术性 提前锁定奥斯卡...</p>
+	<span>阅读：108</span><span>2017-09-05 11:13</span> 
+  </div>
+<div class="hotbox">
+	<div class="hotimg">
+		<div class="hotimgzz"></div>
+		<img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/8d3f876f765845c7fea26595c973072d.jpeg" alt="遛狗未牵绳活该被打？一位女主持人引发的全民暴力崇拜" width="250" height="165"/>
+		<div class="standpoint">财经</div>
+		<a class="zzsz" href="/a/shizheng/20170905/874.html"  target="_blank" title="遛狗未牵绳活该被打？一位女主持人引发的全民暴力崇拜"></a>
+	</div>
+	<h3><a href="/a/shizheng/20170905/874.html">遛狗未牵绳活该被打？一位女主持人</a></h3>
+	<p>北京时间8月31日，一位微博认证为“四川台主持人”的用户在网上自爆：因带狗出门未拴牵引绳，遭到邻居暴打。她在文中诉苦，“尤其是脸，已经一半毁容了。我还是一个主持人，靠脸吃饭，如果好不了，今后都做不了工作”。 养犬人眼中的“小狗”可能极...</p>
+	<span>阅读：199</span><span>2017-09-05 11:03</span> 
+  </div>
+<div class="hotbox">
+	<div class="hotimg">
+		<div class="hotimgzz"></div>
+		<img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/a1063f993ef467030238c9415a09c7eb.jpeg" alt="市值蒸发95%，这家曾经强压苹果的台湾企业，如今“被世界抛弃”" width="250" height="165"/>
+		<div class="standpoint">财经</div>
+		<a class="zzsz" href="/a/shizheng/20170905/873.html"  target="_blank" title="市值蒸发95%，这家曾经强压苹果的台湾企业，如今“被世界抛弃”"></a>
+	</div>
+	<h3><a href="/a/shizheng/20170905/873.html">市值蒸发95%，这家曾经强压苹果的</a></h3>
+	<p>丨本文由华商韬略原创首发 丨作者：迟玉德 / 编辑：陈光 丨责编：杨芷嘉 过去不到1年的时间里，已经听到不下五六回HTC要出售的消息。 8月底，伴随着“惨不忍睹”的Q2季报，HTC手机业务整体出售的风声如约而至，这一次，风声里还夹杂着要出售其救命...</p>
+	<span>阅读：91</span><span>2017-09-05 11:00</span> 
+  </div>
+<div class="hotbox">
+	<div class="hotimg">
+		<div class="hotimgzz"></div>
+		<img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/d1d5a3d1163276ef493c63c83407a991.png" alt="互金监管再下一城，“1 3”体系终建立" width="250" height="165"/>
+		<div class="standpoint">财经</div>
+		<a class="zzsz" href="/a/shizheng/20170905/872.html"  target="_blank" title="互金监管再下一城，“1 3”体系终建立"></a>
+	</div>
+	<h3><a href="/a/shizheng/20170905/872.html">互金监管再下一城，“1 3”体系终</a></h3>
+	<p>8月25日，银监会官网公布《网络借贷信息中介机构业务活动信息披露指引》（下称“《指引》”）。至此，网贷行业银行存管、备案、信息披露三大主要合规政策悉数落地，与2016年8月24日发布的《网络借贷信息中介机构业务活动管理暂行办法》共同组成网贷...</p>
+	<span>阅读：154</span><span>2017-09-05 10:52</span> 
+  </div>
+<div class="hotbox">
+	<div class="hotimg">
+		<div class="hotimgzz"></div>
+		<img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/901c61a681ce4ed226d0b648e59e2cd0.jpeg" alt="晚两年买房等于降一个阶层！绝非危言耸听多打拼十年" width="250" height="165"/>
+		<div class="standpoint">财经</div>
+		<a class="zzsz" href="/a/shizheng/20170905/871.html"  target="_blank" title="晚两年买房等于降一个阶层！绝非危言耸听多打拼十年"></a>
+	</div>
+	<h3><a href="/a/shizheng/20170905/871.html">晚两年买房等于降一个阶层！绝非危</a></h3>
+	<p>很多有计划买房的人都在观望：这次调控史上最严，房价肯定会降，到时候就能抄底买房了...然而，历次房地产调控的实践已经证明— —调控期是刚需买房的最佳窗口期。不要总想着晚两年买房，等着房价大跌，然后就可以省一大笔钱。 不信，我们就来看看...</p>
+	<span>阅读：137</span><span>2017-09-05 10:52</span> 
+  </div>
+<div class="hotbox">
+	<div class="hotimg">
+		<div class="hotimgzz"></div>
+		<img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/a228ecba326d230061198170917e2f11.jpeg" alt="中国有了这两大利器 美元霸权终结" width="250" height="165"/>
+		<div class="standpoint">财经</div>
+		<a class="zzsz" href="/a/shizheng/20170905/869.html"  target="_blank" title="中国有了这两大利器 美元霸权终结"></a>
+	</div>
+	<h3><a href="/a/shizheng/20170905/869.html">中国有了这两大利器 美元霸权终结</a></h3>
+	<p>通过人民币定价黄金、原油合约，俄罗斯、伊朗等国能按人民币计价向中国出售石油，过剩收入在香港买入黄金汇回，任何收益将不再依赖美元，而中国将借此影响全球近40％的原油定价。 有分析认为，中国有了原油和黄金期货这两样利器，美元霸权即将终结...</p>
+	<span>阅读：114</span><span>2017-09-05 10:27</span> 
+  </div>
+<div class="hotbox">
+	<div class="hotimg">
+		<div class="hotimgzz"></div>
+		<img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/233030cf4c1bab7480b3c23a9ea11d89.jpeg" alt="中国最疯狂的资产泡沫ICO暴富传说破灭，继中国后韩国也拟严惩！" width="250" height="165"/>
+		<div class="standpoint">财经</div>
+		<a class="zzsz" href="/a/shizheng/20170905/868.html"  target="_blank" title="中国最疯狂的资产泡沫ICO暴富传说破灭，继中国后韩国也拟严惩！"></a>
+	</div>
+	<h3><a href="/a/shizheng/20170905/868.html">中国最疯狂的资产泡沫ICO暴富传说</a></h3>
+	<p>2017年，中国最疯狂的资产泡沫，莫过于ICO（（initial coin offerings首次公开售币）。ICO监管风暴之下，火爆的ICO被认定为非法集资。“一币一别墅”，“暴利超贩毒”的暴富传说破灭。中国央行等7部委正式叫停ICO。 ICO监管靴子落地，中国央行等7部...</p>
+	<span>阅读：192</span><span>2017-09-05 10:22</span> 
+  </div>
+<div class="hotbox">
+	<div class="hotimg">
+		<div class="hotimgzz"></div>
+		<img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/d4d50897e41b994634b4021757d8b303.jpeg" alt="美国人慌了，中国要买光全世界的驴？" width="250" height="165"/>
+		<div class="standpoint">财经</div>
+		<a class="zzsz" href="/a/shizheng/20170905/867.html"  target="_blank" title="美国人慌了，中国要买光全世界的驴？"></a>
+	</div>
+	<h3><a href="/a/shizheng/20170905/867.html">美国人慌了，中国要买光全世界的驴</a></h3>
+	<p>最近，美国老百姓被驴闹得有点慌。 据美国媒体报道，野马自由联合会称，美国有大量的野驴被非法运到墨西哥进行屠宰，然后卖到中国！ 如果这个口子不堵上，美国野驴距离种族灭绝，已经不远了。 美国人民绝不是哗众取宠的。 据历史资料，1990年代，中...</p>
+	<span>阅读：158</span><span>2017-09-05 10:19</span> 
+  </div>
+<div class="hotbox">
+	<div class="hotimg">
+		<div class="hotimgzz"></div>
+		<img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/967a3c2742d60a606162a975ccb6eae0.jpeg" alt="让雷军都“压力山大”的00后CEO：年仅17岁却有300位员工！" width="250" height="165"/>
+		<div class="standpoint">财经</div>
+		<a class="zzsz" href="/a/shizheng/20170905/866.html"  target="_blank" title="让雷军都“压力山大”的00后CEO：年仅17岁却有300位员工！"></a>
+	</div>
+	<h3><a href="/a/shizheng/20170905/866.html">让雷军都“压力山大”的00后CEO：</a></h3>
+	<p>看来作业还是不够多啊 来自创业经纬论 说起雷军，估计没谁不知道，大佬中的大佬，和马云、马化腾都能谈笑风生，什么风风雨雨没见过？ 但在这个世界上，居然还有人，能让雷军“压力山大”？ 而且，这个人居然还是一个17岁的00后？ 9月3日下午，雷军...</p>
+	<span>阅读：138</span><span>2017-09-05 10:18</span> 
+  </div>
+<div class="hotbox">
+	<div class="hotimg">
+		<div class="hotimgzz"></div>
+		<img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/a05fe24e43eae69d1bdbdda4c3c54f4d.jpeg" alt="上达电子净利增3倍 第三大股东减持套现2000万" width="250" height="165"/>
+		<div class="standpoint">财经</div>
+		<a class="zzsz" href="/a/shizheng/20170905/865.html"  target="_blank" title="上达电子净利增3倍 第三大股东减持套现2000万"></a>
+	</div>
+	<h3><a href="/a/shizheng/20170905/865.html">上达电子净利增3倍 第三大股东减持</a></h3>
+	<p>挖贝网 讯 9月5日消息， 上达电子 （836298）上半年营收净利双增长，净利润增长超3倍。高速增长的背后是，负债连年创新高，从2014年的4亿增加到去年的9亿；第三大股东减持，套现2000万。 第三大股东减持 上达电子上半年净利润增长3倍，第三大股东卖...</p>
+	<span>阅读：192</span><span>2017-09-05 10:18</span> 
+  </div>
+<div class="hotbox">
+	<div class="hotimg">
+		<div class="hotimgzz"></div>
+		<img src="http://bos.nj.bpc.baidu.com/v1/mediaspot/525f5fe85c40e553f428e7b81697e7fd.jpeg" alt="质押全部股票借款参与公司定增，尹荣造：吹过的牛逼我要一一实现" width="250" height="165"/>
+		<div class="standpoint">财经</div>
+		<a class="zzsz" href="/a/shizheng/20170905/864.html"  target="_blank" title="质押全部股票借款参与公司定增，尹荣造：吹过的牛逼我要一一实现"></a>
+	</div>
+	<h3><a href="/a/shizheng/20170905/864.html">质押全部股票借款参与公司定增，尹</a></h3>
+	<p>文/读懂新三板武亚玲 被很多人称为“疯子”的伯朗特董事长尹荣造又“搞事情”了！ 9月1日，新三板公司伯朗特（430394.OC）发布公告，董事长尹荣造将其持有的全部股份，共计733.5万股（占公司总股本的21.26%）质押给自然人万志能，借款3000万元，这...</p>
+	<span>阅读：159</span><span>2017-09-05 10:18</span> 
+  </div>
+
+
+		</div>
+		<!--@热门推荐-->
+    </div>
+    
+    <!--右侧-->
+    <div class="newsr">
+		<div class="topnews">
+			<div class="com-title"><span><img src="/moke8/html/images/symbol-3.png" alt="" />今日头条</span></div>
+			<div class="sideMenu" style="margin:0 auto">
+                <h3 class="h3img1"><a href="/a/shizheng/20170905/870.html"  target="_blank" title="当年跟随贾跃亭加入乐视的前央视名嘴，现在过得如何？丨艾问">当年跟随贾跃亭加入乐视的前央视名</a></h3>
+	  <ul><li>刘建宏：“来到乐视体育的三年，姑且不论外部环境和公司内部发生多少变化，创新和尝试，一直是我最为重视的方向。” 文／李峥 有关乐视，有关贾跃亭，是进入2017年以来的热门话题。上周，曾经去拯救乐视的孙宏斌发表了他自己对于乐视和贾跃亭的看法...</li></ul>
+<h3 class="h3img2"><a href="/a/shizheng/20170905/875.html"  target="_blank" title="胡润: 全球房价涨幅TOP10, 中国六大城市上榜">胡润: 全球房价涨幅TOP10, 中国六</a></h3>
+	  <ul><li>* 2017年8月31日，胡润研究院发布《2017上半年胡润全球房价指数》以及《2017上半年胡润海外置业投资回报指数》。 根据《2017上半年胡润全球房价指数》报告，最近一年全球房价涨幅最高的前50名城市中，中国入榜21个。前10名中，中国入榜6个。其中 加...</li></ul>
+<h3 class="h3img3"><a href="/a/yingshiyule/20170830/658.html"  target="_blank" title="《破局》：郭富城有多“怂”，王千源就有多“疯”">《破局》：郭富城有多“怂”，王千</a></h3>
+	  <ul><li>摘要：文/杀手里昂记得是初中的时候，看过一部香港恐怖片叫《月夜闪灵》，吕良伟在里面演一个变态杀人狂，每当他肢解受害人尸体的时候就会响起一首“我等着你回来”的歌，那低沉哀怨的女声再配上变态血腥的画面，简直令人 文/杀手里昂 记得是初中的...</li></ul>
+<h3 class="h3img4"><a href="/a/shizheng/20170830/746.html"  target="_blank" title="中国工商总局据称正评估对苹果涉嫌垄断的举报">中国工商总局据称正评估对苹果涉嫌</a></h3>
+	  <ul><li>摘要：PingWest品玩8月30日报道，据彭博社援引知情人士消息称，中国工商总局已经收到北京达晓律师事务所代表部分中国开发者的举报。知情人士称，工商总局目前正在对举报内容进行评估，以确定是否对苹果公司涉嫌 PingWest品玩8月30日报道，据彭博社...</li></ul>
+<h3 class="h3img5"><a href="/a/shizheng/20170830/753.html"  target="_blank" title="乐视网半年报：已归还贾跃亭姐弟全部借款；库存跌回4年前水平，3">乐视网半年报：已归还贾跃亭姐弟全</a></h3>
+	  <ul><li>■ 文 | 小师妹 热点 七夕刚过，朋友圈就被“小朋友画廊”H5刷屏了，该H5由腾讯公益和“wabc无障碍艺途”公益机构联合出品。在“用艺术点亮生命”页面看到。截至29日中午14点40分左右，该项目1500万筹款目标已完成。29日中午12:00-12:30，短短30分...</li></ul>
+
+			</div>
+		</div>
+
+      <!--关注我们-->
+      <div class="follow" style="margin-top:82px;">
+        <div class="com-title"><span><img src="/moke8/html/images/symbol-5.png" alt="" />关注我们</span></div>
+        <div class="followcon"> <span>关注微信公众号，了解最新精彩内容</span>
+          <p class=""> <img src="/moke8/html/images/qr1.jpg" alt="" /> <img src="/moke8/html/images/qr2.jpg" alt="" /> </p>
+          <a href="" class="awb1"></a><a href="" class="awb2"></a><a href="" class="asubscription"></a> </div>
+      </div>
+      <!--阅读推荐-->
+		<div class="read">
+		  <div class="com-title"><span><img src="/moke8/html/images/symbol-3.png" alt="自媒体" />自媒体</span></div>
+		  		     
+
+		</div>
+      <!--轮播广告-->
+      <div class="rightad">
+        <div class="focusBox" style="margin:0 auto">
+        <ul class="pic">
+            <li><a href="###" target="_blank" title=""><img src="/moke8/html/images/img7.jpg"/></a></li>
+            <li><a href="/" target="_blank" title=""><img src="/upload.ikanchai.com/2014/1211/thumb_365_670_1418306464554.jpg"/></a></li>
+            <li><a href="###" target="_blank" title=""><img src="/img1.gtimg.com/tech/pics/hv1/146/91/1759/114402326.jpg"/></a></li>
+            <li><a href="###" target="_blank" title=""><img src="/moke8/html/images/img9.jpg"/></a></li>
+</ul>
+        </div>
+      </div>
+      <!--轮播广告-->
+      
+      <!--科技快报-->
+      <div class="newsletter">
+        <div class="com-title"><span><img src="/moke8/html/images/symbol-13.png" alt="" />科技快报</span></div>
+        <ul>
+        
+  
+</ul>
+      </div>
+      <!--品牌展示-->
+      <div class="brandshow">
+      <div class="com-title"><span><img src="/moke8/html/images/symbol-5.png" alt="" />品牌展示</span></div>
+
+ </div>
+
+    </div>
+    <div class="floatfix"></div>
+    	 <!-- 广告位01 -->
+	   <div class="adlr" style="top:450px;"></div>
+	 <!-- @广告位01 -->
+  </div>
+  
+  <!--其他信息-->
+	<div class="mainother">
+		<!-- 合作伙伴 -->
+		<div class="partners">
+			<div class="partnerstitle"></div>
+			<div class="partnersimg"><a href=""><img src="/moke8/html/images/link_logo1.jpg" alt="" /></a></div>
+			<div class="partnersimg"><a href=""><img src="/moke8/html/images/link_logo2.jpg" alt="" /></a></div>
+			<div class="partnersimg"><a href=""><img src="/moke8/html/images/link_logo3.jpg" alt="" /></a></div>
+			<div class="partnersimg"><a href=""><img src="/moke8/html/images/link_logo4.jpg" alt="" /></a></div>
+			<div class="partnersimg"><a href=""><img src="/moke8/html/images/link_logo5.jpg" alt="" /></a></div>
+			<div class="partnersimg"><a href=""><img src="/moke8/html/images/link_logo6.jpg" alt="" /></a></div>
+			<div class="partnersimg"><a href=""><img src="/moke8/html/images/link_logo7.jpg" alt="" /></a></div>
+			<div class="partnersimg"><a href=""><img src="/moke8/html/images/link_logo8.jpg" alt="" /></a></div>
+
+		</div>
+		<!-- @合作伙伴 -->
+		<!-- 友情链接 -->
+		<div class="links">
+			<div class="linkstitle"></div>
+			<ul class="ulfix">
+				    <li><a href='http://www.xlking.com/xl/index.html' target='_blank'>湘灵科技</a> </li>
+			</ul>
+		</div>
+		<!-- @友情链接 -->
+	</div>
+  	<div class="mreturn">
+		<div id="code"></div>
+<div id="code_img" src="/moke8/html/images/qr2.jpg"></div>
+<a id="gotop"></a> 
+
+	</div>
+</div>
+	<!--@侧边栏按钮-->
+	<!--网站公共页脚-->
+	<div class="footer">
+  <div class="wrapper">
+    <div class="lft">Copyright @ 2017-2020 湘灵科技 版权所有  <a href="/xl/index.html">关于我们</a></div>
+    <div class="rgt">
+    
+    <span style="display:none"><!-- 站长统计 --></span>
+    </div>
+  </div>
+</div>	
+
+<script>
+$(function(){
+	$(".nav li dl").each(function(){
+		if($(this).find("dd").size()==0){
+			$(this).remove();
+		}		
+	});
+	
+});
+</script>
+
+<!--@网站公共页脚-->
+</body>
+</html>
+

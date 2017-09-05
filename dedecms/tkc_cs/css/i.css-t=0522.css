@@ -1,0 +1,39 @@
+#i {
+    background: url("../img/i0.jpg")/*tpa=http://aosmith.accdo.com/tkc_cs/img/i0.jpg*/ no-repeat center top;
+    background-size: 10rem auto;
+
+}
+#uu1 {
+    color: white;
+    font-size: 0.4rem;
+    border: 0;
+    position: absolute;
+    background: rgba(218, 38, 38, 0);
+    top: 4.7rem;
+    width: 6rem;
+    height: 1rem;
+    left: 2.7rem;
+}
+
+#uu2 {
+    color: white;
+    font-size: 0.4rem;
+    border: 0;
+    position: absolute;
+    background: rgba(218, 38, 38, 0);
+    top: 6.32rem;
+    width: 6rem;
+    height: 1rem;
+    left: 2.7rem;
+}
+#uu3{
+    border: 0;
+    position: absolute;
+    background: rgba(218, 38, 38, 0);
+    top: 9.5rem;
+    width: 6.5rem;
+    height: 1.5rem;
+    left: 1.7rem;
+
+
+}

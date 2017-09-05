@@ -1,0 +1,1 @@
+INSERT INTO `dede_taconfig` VALUES('1','password','shenjianshou.cn','');

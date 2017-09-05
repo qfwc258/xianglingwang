@@ -1,0 +1,62 @@
+#d {
+    background: url("../img/d1.jpg")/*tpa=http://aosmith.accdo.com/tkc_cs/img/d1.jpg*/ no-repeat center top;
+    background-size: 10rem auto;
+
+}
+
+#d1 {
+    width: 7rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.8rem;
+}
+
+#d2 {
+    width: 8rem;
+    position: absolute;
+    left: 1.2rem;
+    top: 2.4rem;
+}
+
+#d3 {
+    width: 7rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 0.95rem;
+}
+
+#d4 {
+    width: 7rem;
+    position: absolute;
+    left: 1.5rem;
+    bottom: 3rem
+}
+
+@-webkit-keyframes bounce-down {
+    25% {
+        -webkit-transform: translateY(-40px);
+    }
+    50%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    75% {
+        -webkit-transform: translateY(40px);
+    }
+}
+
+@keyframes bounce-down {
+    25% {
+        transform: translateY(-40px);
+    }
+    50%, 100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(40px);
+    }
+}
+
+.animate-bounce-down {
+    -webkit-animation: bounce-down 4s linear infinite;
+    animation: bounce-down 4s linear infinite;
+}

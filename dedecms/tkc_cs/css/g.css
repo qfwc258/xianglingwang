@@ -1,0 +1,70 @@
+#g {
+    background: url("../img/g1.jpg")/*tpa=http://aosmith.accdo.com/tkc_cs/img/g1.jpg*/ no-repeat center top;
+    background-size: 10rem auto;
+
+}
+#g0 {
+    position: absolute;
+    top: 1rem;
+    width: 4.1rem;
+    margin: 0 auto;
+    left: 3.1rem;
+}
+
+#g1 {
+    position: absolute;
+    top: 0.5rem;
+    width: 5.1rem;
+    margin: 0 auto;
+    left: 2.5rem;
+}
+
+#g2 {
+    display: none;
+    position: absolute;
+    top: 4.5rem;
+    width: 7.1rem;
+    margin: 0 auto;
+    left: 1.5rem;
+    -webkit-animation-delay: 0.1s;
+}
+
+#g3 {
+    display: none;
+    position: absolute;
+    top: 7rem;
+    width: 7.1rem;
+    margin: 0 auto;
+    left: 1.5rem;
+    -webkit-animation-delay: 0.5s;
+}
+
+#g4 {
+    display: none;
+    position: absolute;
+    top: 7.1rem;
+    width: 7.1rem;
+    margin: 0 auto;
+    left: 1.5rem;
+    -webkit-animation-delay: 1s;
+}
+
+#g5 {
+    display: none;
+    position: absolute;
+    top: 9.5rem;
+    width: 7.1rem;
+    margin: 0 auto;
+    left: 1.5rem;
+    -webkit-animation-delay: 1.0s;
+}
+
+#g6 {
+    display: none;
+    position: absolute;
+    top: 11.6rem;
+    width: 7.1rem;
+    margin: 0 auto;
+    left: 1.5rem;
+    -webkit-animation-delay: 2s;
+}

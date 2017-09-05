@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>A.O.史密斯</title>
+<meta name="keywords" content="flv播放器,f4v,mp4,hlv,rtmp播放器,网页视频播放器,ckplayer官网,视频流,播放器" />
+<meta name="description" content="ckplayer(超酷网页视频播放器),支持http协议下的flv,f4v,mp4,支持rtmp视频流和rtmp视频回放，支持m3u8格式，是你做视频直播，视频点播的理想播放器 " />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-title" content="ckplayer">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-touch-fullscreen" content="yes"/>
+<meta name="author" content="ckplayer,超酷网页视频播放器" />
+<meta name="copyright" content="ckplayer,超酷网页视频播放器" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+<style type="text/css">
+body{margin:0px;font-family:"Microsoft YaHei","YaHei","微软雅黑","SimHei","黑体";}
+.logo {
+	text-align: center;
+	height: 48px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.tab {
+	line-height: 42px;
+	text-align: center;
+	background-color: #09F;
+	color: #FFF;
+	height: 42px;
+}
+.tab a {
+	color: #FFF;
+	text-decoration: none;
+}
+.ver {
+	line-height: 50px;
+	text-align: center;
+	font-size: 36px;
+	padding-top: 15px;
+	color: #333;
+}
+.sim {
+	font-size: 24px;
+	line-height: 50px;
+	text-align: center;
+	color: #666;
+}
+#a1 {
+	width:100%;
+}
+.wk {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 50px;
+}
+.copy {
+	text-align: center;
+	line-height: 36px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999;
+	background-color: #F6F6F6;
+	color: #2E2E2E;
+	position: fixed;
+	bottom: 0px;
+	z-index: 10;
+	width: 100%;
+}
+.copy a {
+	color: #2E2E2E;
+	text-decoration: none;
+}
+.w_2{
+	line-height:50px;
+	height:50px;
+	text-align:center;
+	background-color:#09F;
+	color:#FFF;
+	cursor:pointer;
+	margin-right: auto;
+	margin-left: auto;
+	width: 50%;
+}
+.w_1{
+	line-height:50px;
+	height:50px;
+	width:50%;
+	text-align:center;
+	background-color:#F60;
+	margin-right: auto;
+	margin-left: auto;
+}.w_1 a{color:#FF0;text-decoration:none;}.w_3{
+	line-height:50px;
+	height:50px;
+	width:50%;
+	text-align:center;
+	background-color:#093;
+	margin-right: auto;
+	margin-left: auto;
+}.w_3 a{color:#FFF;text-decoration:none;}
+</style>
+</head>
+
+<body>
+ <h3>{dede:field.title/}</h3><BR>
+  <!--陈伟-->
+      <div id="a1"></div>
+<script type="text/javascript" src="/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+	var flashvars={
+		f:'{dede:field.ckplayer/}',
+		c:0,
+		b:1,
+		i:'http://www.ckplayer.com/static/images/cqdw.jpg'
+		};
+	var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
+	CKobject.embedSWF('/ckplayer/ckplayer.swf','a1','ckplayer_a1','100%','100%',flashvars,params);
+	/*
+	CKobject.embedSWF(播放器路径,容器id,播放器id/name,播放器宽,播放器高,flashvars的值,其它定义也可省略);
+	下面三行是调用html5播放器用到的
+	*/
+	var video=['{dede:field.ckplayer/}->video/mp4'];
+	var support=['iPad','iPhone','ios','android+false','msie10+false'];
+	CKobject.embedHTML5('a1','ckplayer_a1',"100%,"100%",video,flashvars,support);
+	
+	
+	function closelights(){//关灯
+		alert(' 本演示不支持开关灯');
+	}
+	function openlights(){//开灯
+		alert(' 本演示不支持开关灯');
+	}
+  </script>      
+ <!--陈伟--> 
+  <br>
+  {dede:field.body/}
+</body>
+</html>
+
+  
